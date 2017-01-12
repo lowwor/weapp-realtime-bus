@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF6600",
+    "navigationBarTitleText": "公交",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  }
+}

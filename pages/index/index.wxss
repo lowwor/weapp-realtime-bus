@@ -1,0 +1,184 @@
+/**track.wxss**/
+
+.container {
+  background: #f60;
+  padding: 0;
+  position: relative;
+}
+
+/* ==========================================================================
+   header
+ ============================================================================ */
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.search-input {
+  position: relative;
+  display: flex;
+  width: 92%;
+  margin: 0 4%;
+  height: 75rpx;
+  box-shadow: 5rpx 5rpx 15rpx #e2e2e2;
+  transition: all 0.15s ease-in-out;
+}
+
+.search-input:focus {
+  box-shadow: 5rpx 5rpx 20rpx #d2d2d2;
+}
+
+.search-icon-box {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 20rpx;
+  width: 38rpx;
+  height: 38rpx;
+  margin-top: -16rpx;
+}
+
+.input-form {
+  position: relative;
+  background: #fff;
+  flex: 1;
+  display: flex;
+  height: 100%;
+  padding-right: 110rpx;
+}
+
+.input-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  flex: 1;
+  display: flex;
+  height: 100%;
+  padding: 0 160rpx 0 70rpx;
+  font-size: 11pt;
+  line-height: 150%;
+}
+
+.input-placeholder {
+  color: #ccc;
+  font-size: 11pt;
+  line-height: 150%;
+}
+
+button {
+  font-size: 11pt;
+  background: transparent;
+  line-height: 150%;
+  border-radius: 0;
+  padding: 0;
+  border: none;
+}
+
+button::after {
+  display: none;
+}
+
+.input-clear-button {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 115rpx;
+  padding: 15rpx;
+  margin-top: -30rpx;
+}
+
+.input-clear-button:active {
+  opacity: 0.8;
+}
+
+.clear-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.input-confirm-button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 75rpx;
+  width: 110rpx;
+  background: #9f8bea;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.input-confirm-button:active {
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   main
+ ============================================================================ */
+
+.main {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  margin-top: 85rpx;
+}
+
+.swap-icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.fab {
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx;
+  background-color: #9f8bea;
+}
+
+/* ==========================================================================
+   station item
+ ============================================================================ */
+
+.bus-icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.list-item {
+  background-color: #fff;
+  position: relative;
+  font-size: 26rpx;
+  height: 100rpx;
+  box-shadow: 5rpx 5rpx 20rpx #d2d2d2;
+  margin: 5rpx;
+}
+
+.item-station {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+}
+
+.item-bus {
+  position: absolute;
+  right: 20rpx;
+  top: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
